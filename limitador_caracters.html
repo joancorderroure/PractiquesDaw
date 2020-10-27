@@ -5,9 +5,15 @@
         <style>
         
         input[type=text] {
-            min-width: 5px;
+            width: 15px;
             max-width: 100px;
         } 
+
+        textarea {
+            min-width: 300px;
+            min-height: 200px;
+            border-color: black;
+        }
 
 
         </style>
@@ -18,11 +24,13 @@
         <br>
 
         <p id="nChar">
-            N. lletres: 2 de<input type="text" value="10">
+            N. lletres: 2 de <input type="text" value="10" onkeypress="this.style.width =  
+            ((this.value.length + 1) * 8) + 'px';">
         </p>
 
         <p id="nInt">
-            N. nums: 2 de <input type="text" value="10">
+            N. nums: 2 de <input type="text" value="10" onkeypress="this.style.width =  
+            ((this.value.length + 1) * 8) + 'px';">
         </p>
 
     </body>
