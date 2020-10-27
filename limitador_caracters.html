@@ -14,22 +14,21 @@
             min-height: 200px;
             border-color: black;
         }
-
-
         </style>
+        <script src="limitador.js"></script>
     </head>
     <body>
         
-        <textarea id="text" onkeypress="limitador()"/></textarea> 
+        <textarea id="text" onkeypress="return limit(10);"/></textarea> 
         <br>
 
-        <p id="nChar">
-            N. lletres: 2 de <input type="text" value="10" onkeypress="this.style.width =  
+        <p>
+            N. lletres: <span id="nLletres">0</span> de <input type="text" value="10" onkeypress="this.style.width =  
             ((this.value.length + 1) * 8) + 'px';">
         </p>
 
-        <p id="nInt">
-            N. nums: 2 de <input type="text" value="10" onkeypress="this.style.width =  
+        <p>
+            N. nums: <span id="nLletres">0</span> de <input type="text" value="10" onkeypress="this.style.width =  
             ((this.value.length + 1) * 8) + 'px';">
         </p>
 
